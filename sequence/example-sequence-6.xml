@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sequence>
+    <id value="sequence-6"/>
+    <type value="DNA"/>
+    <coordinateSystem value="1"/>
+    <referenceSeq>
+        <referenceSeqId>
+          <coding>
+            <system value="http://www.ncbi.nlm.nih.gov/nuccore"/>
+            <code value="NC_000002.12"/>
+          </coding>
+        </referenceSeqId>
+        <strand value="1"/>
+        <windowStart value="128273732"/>
+        <windowEnd value="128273736"/>
+    </referenceSeq>
+     <variant>
+        <start value="128273733"/>
+        <end value="128273735"/>
+        <observedAllele value="GA"/>
+        <referenceAllele value="AT"/>
+    </variant>
+</Sequence>

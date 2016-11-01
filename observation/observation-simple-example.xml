@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="simple-example"/>
+  <status value="final"/>
+  <code>
+    <text value="Allele ABC"/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+    <display value="Molecular Lab Patient ID: HOSP-23456"/>
+  </subject>
+  <issued value="2013-04-03T15:30:10+01:00"/>
+ 
+  <related>
+    <target>
+      <reference value="Sequence/graphic-example-6"/>
+      <display value="Variant-1"/>
+    </target>
+  </related>
+  
+</Observation>

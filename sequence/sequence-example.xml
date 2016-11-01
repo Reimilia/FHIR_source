@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sequence>
+    <id value="example"/>
+    <type value="DNA"/>
+    <coordinateSystem value ="0"/>
+    <patient>
+        <reference value="Patient/example"/>
+    </patient>
+    <referenceSeq>
+        <referenceSeqId>
+          <coding>
+            <system value="http://www.ncbi.nlm.nih.gov/nuccore"/>
+            <code value="NC_000007.14"/>
+          </coding>
+        </referenceSeqId>
+        <strand value="1"/>
+        <windowStart value="55227970"/>
+        <windowEnd value="55227980"/>
+    </referenceSeq>
+    <variant>
+        <start value="55227976"/>
+        <end value="55227977"/>
+        <observedAllele value="T"/>
+        <referenceAllele value="A"/>
+    </variant>
+    <repository>
+        <url value="https://genomics.googleapis.com/$discovery/rest?version=v1alpha2"/>
+        <type value="directlink"/>
+        <name value="ga4gh"/>
+        <variantId value="V1A2"/>
+    </repository>
+</Sequence>

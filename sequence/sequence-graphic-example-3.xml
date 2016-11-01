@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sequence>
+    <id value="sequence-3"/>
+    <type value="DNA"/>
+    <coordinateSystem value="1"/>
+    <referenceSeq>
+        <referenceSeqPointer>
+          <reference value="Sequence/graphic-example-5"/>
+        </referenceSeqPointer>
+        <strand value="1"/>
+        <windowStart value="1"/>
+        <windowEnd value="4"/>
+    </referenceSeq>
+    <variant>
+      <variantPointer>
+        <reference value="Observation/simple-example"/>
+      </variantPointer>
+    </variant>
+    <pointer>
+        <reference value="Sequence/graphic-example-4"/>
+    </pointer>
+</Sequence>

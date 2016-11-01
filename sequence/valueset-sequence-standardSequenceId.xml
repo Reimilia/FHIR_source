@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="dbFDA"/>
+  <status value="draft"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Standard sequence's id is the unique id of sequence from the Provider."/>
+  <compose>
+    <include>
+      <system value="https://precision.fda.gov"/>
+    </include>
+  </compose>
+</ValueSet>

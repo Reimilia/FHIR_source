@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <name value="dbQualityMethod"/>
+  <status value="draft"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="Method used to get sequence quality result."/>
+  <compose>
+    <include>
+      <system value="https://precision.fda.gov"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Sequence>
+    <id value="graph-3"/>
+    <type value="DNA"/>
+    <referenceSeq>
+        <genomeBuild value="GRCh 38"/>
+        <chromosome>
+            <coding>
+                <system value="http://hl7.org/fhir/ValueSet/chromosome-human">
+                <code value="2">
+                <display valye="chromsome 2">
+            </coding>
+        </chromosome>
+        <strand value="1"/>
+        <windowStart value="128273732"/>
+        <windowEnd value="128273732"/>
+    </referenceSeq>
+    <variant>
+        <start value="55227922"/>
+        <end value="55227923"/>
+        <observedAllele value="T"/>
+        <referenceAllele value="C"/>
+    </variant>
+</Sequence>

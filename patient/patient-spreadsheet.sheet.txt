@@ -804,6 +804,12 @@
   Description = Additional Genetics Example
   Filename = patient-genetics-example1.xml
 
+ -- Row 19 -----------------------------------
+  Name = FMH Related
+  Identity = 147051
+  Description = Patient example for FamilyMemberHistory (Pedigree Tree)
+  Filename = patient-147051.xml
+
 === Sheet Examples =====================================
 
  -- Row 1 -----------------------------------

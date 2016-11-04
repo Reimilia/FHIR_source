@@ -321,4 +321,34 @@
   Description = Mother died from a stroke aged 56. Brother with diabetes.
   Filename = familymemberhistory-example-mother.xml
 
+ -- Row 3 -----------------------------------
+  Name = Natural Mother
+  Identity = 147054
+  Description = Diabetes mellitus with one\'s natural mother begin at the age 45
+  Filename = familymemberhistory-147054.xml
+
+ -- Row 4 -----------------------------------
+  Name = Grandmother
+  Identity = 147146
+  Description = Basic Example to show one\'s grandmother at the age 70
+  Filename = familymemberhistory-147146.xml
+
+ -- Row 5 -----------------------------------
+  Name = Meternal Uncle
+  Identity = 147145
+  Description = Basic Example to show one\'s maternal uncle
+  Filename = familymemberhistory-147145.xml
+
+ -- Row 6 -----------------------------------
+  Name = Meternal Aunt
+  Identity = 148093
+  Description = Basic Example to show one\'s maternal aunt at the age 55
+  Filename = familymemberhistory-148093.xml
+
+ -- Row 7 -----------------------------------
+  Name = Paternal Uncle
+  Identity = 147144
+  Description = Diabetes mellitus type 2 without retinopathy with one\'s paternal uncle
+  Filename = familymemberhistory-147144.xml
+
 === Sheet Examples =====================================

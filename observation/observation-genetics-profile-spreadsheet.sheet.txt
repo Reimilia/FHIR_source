@@ -82,7 +82,7 @@
 
  -- Row 1 -----------------------------------
   Element = Observation
-  Profile Name = Genetics
+  Profile Name = Observation-Genetics
 
  -- Row 2 -----------------------------------
   Element = Observation.extension

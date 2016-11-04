@@ -5,7 +5,7 @@
 
  -- Row 1 -----------------------------------
   Element = DiagnosticRequest
-  Profile Name = OrderForGenetics
+  Profile Name = DiagnosticRequest-Genetics
 
  -- Row 2 -----------------------------------
   Element = DiagnosticRequest.extension

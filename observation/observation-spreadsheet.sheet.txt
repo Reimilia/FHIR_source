@@ -879,7 +879,7 @@
   Type = spreadsheet
 
  -- Row 11 -----------------------------------
-  Name = Observation for Genetics
+  Name = Observation-Genetics
   IG Name = core
   Filename = observation-genetics.xml
   Type = spreadsheet
@@ -1083,24 +1083,6 @@
   Identity = bmd
   Description = Example of an encoded BMD measurements of left femur
   Filename = observation-example-bmd.xml
-
- -- Row 33 -----------------------------------
-  Name = Diplotype Example
-  Identity = example-diplotype
-  Description = Example of phenotype
-  Filename = observation-example-diplotype.xml
-
- -- Row 34 -----------------------------------
-  Name = Phenotype Example
-  Identity = example-phenotype
-  Description = Example of diplotype
-  Filename = observation-example-phenotype.xml
-
- -- Row 35 -----------------------------------
-  Name = Sequence Graphic Example
-  Identity = simple-example
-  Description = Example of sequence graph
-  Filename = observation-simple-example.xml
 
 === Sheet Examples =====================================
 

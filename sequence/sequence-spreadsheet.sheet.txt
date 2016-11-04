@@ -517,13 +517,13 @@
   Type = code
   Binding = sequenceType
   Short Name = AA | DNA | RNA
-  Definition = Amino acid / cDNA transcript / RNA variant.
+  Definition = Amino Acid Sequence/ DNA Sequence / RNA Sequence
 
  -- Row 4 -----------------------------------
   Element = Sequence.coordinateSystem
   Card. = 1..1
   Type = integer
-  Short Name = Base number of coordinate system (0 means 0-based, 1 means 1-based)
+  Short Name = Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)
   Definition = Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).
 
  -- Row 5 -----------------------------------
@@ -673,7 +673,7 @@
   Card. = 0..1
   Type = string
   Short Name = Observed sequence
-  Definition = Sequence that was observed.
+  Definition = Sequence string that was observed.
 
  -- Row 26 -----------------------------------
   Element = Sequence.quality
@@ -792,8 +792,8 @@
   Element = Sequence.repository
   Card. = 0..*
   UML = right
-  Short Name = External repository
-  Definition = Configurations of the external repository.
+  Short Name = External repository which identificate  patients\' observedSeq
+  Definition = Configurations of the external repository. The repository shall store patients\' observedSeq or identification of patients\' observedSeq.
 
  -- Row 43 -----------------------------------
   Element = Sequence.repository.type
@@ -963,37 +963,37 @@
   Filename = sequence-example.xml
 
  -- Row 2 -----------------------------------
-  Name = Sequence example for graph scenario 1
+  Name = !Sequence example for graph scenario 1
   Identity = sequence-1
   Description = Sequence Graphic example-1
   Filename = sequence-graphic-example-1.xml
 
  -- Row 3 -----------------------------------
-  Name = Sequence example for graph scenario 2
+  Name = !Sequence example for graph scenario 2
   Identity = sequence-2
   Description = Sequence Graphic example-2
   Filename = sequence-graphic-example-2.xml
 
  -- Row 4 -----------------------------------
-  Name = Sequence example for graph scenario 3
+  Name = !Sequence example for graph scenario 3
   Identity = sequence-3
   Description = Sequence Graphic example-3
   Filename = sequence-graphic-example-3.xml
 
  -- Row 5 -----------------------------------
-  Name = Sequence example for graph scenario 4
+  Name = !Sequence example for graph scenario 4
   Identity = sequence-4
   Description = Sequence Graphic example-4
   Filename = sequence-graphic-example-4.xml
 
  -- Row 6 -----------------------------------
-  Name = Sequence example for graph scenario 5
+  Name = !Sequence example for graph scenario 5
   Identity = sequence-5
   Description = Sequence Graphic example-5
   Filename = sequence-graphic-example-5.xml
 
  -- Row 7 -----------------------------------
-  Name = Sequence example for graph scenario 6
+  Name = !Sequence example for graph scenario 6
   Identity = sequence-6
   Description = Sequence Graphic example-6
   Filename = sequence-graphic-example-6.xml

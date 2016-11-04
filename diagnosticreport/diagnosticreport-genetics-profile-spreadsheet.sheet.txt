@@ -45,7 +45,7 @@
 
  -- Row 1 -----------------------------------
   Element = DiagnosticReport
-  Profile Name = ReportForGenetics
+  Profile Name = DiagnosticReport-Genetics
 
  -- Row 2 -----------------------------------
   Element = DiagnosticReport.codedDiagnosis

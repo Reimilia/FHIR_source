@@ -41,7 +41,7 @@
   Display = Presumed benign
   Definition = Presumed benign
 
-=== Sheet ReportForGenetics =====================================
+=== Sheet DiagnosticReport-Genetics =====================================
 
  -- Row 1 -----------------------------------
   Element = DiagnosticReport

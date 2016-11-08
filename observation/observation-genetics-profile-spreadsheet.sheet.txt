@@ -78,7 +78,7 @@
   Description = SO-Sequence Ontology  is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.
   Conformance = preferred
 
-=== Sheet ObservationForGenetics =====================================
+=== Sheet Observation-Genetics =====================================
 
  -- Row 1 -----------------------------------
   Element = Observation

@@ -1,7 +1,7 @@
 ﻿
 === Sheet Bindings =====================================
 
-=== Sheet OrderForGenetics =====================================
+=== Sheet DiagnosticRequest-Genetics =====================================
 
  -- Row 1 -----------------------------------
   Element = DiagnosticRequest

@@ -9,7 +9,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Yi Wang</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-11-03T16:39:24Z</LastSaved>
+  <LastSaved>2016-11-08T21:06:41Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -1047,7 +1047,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">id</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">observation-genetics</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">observation-genetic</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">name</Data></Cell>
@@ -1080,7 +1080,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">published.structure</Data></Cell>
-    <Cell ss:StyleID="s78"><Data ss:Type="String">ObservationForGenetics</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Observation-Genetics</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">version</Data></Cell>
@@ -1142,10 +1142,10 @@
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="ObservationForGenetics">
+ <Worksheet ss:Name="Observation-Genetics">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="=ObservationForGenetics!R1C1:R69C25" ss:Hidden="1"/>
+    ss:RefersTo="='Observation-Genetics'!R1C1:R69C25" ss:Hidden="1"/>
   </Names>
   <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="71" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s86" ss:DefaultColumnWidth="64.8"
@@ -3219,7 +3219,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>10</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
    <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -3233,11 +3233,12 @@
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

@@ -22,8 +22,8 @@
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>788</TabRatio>
-  <ActiveSheet>2</ActiveSheet>
-  <FirstVisibleSheet>2</FirstVisibleSheet>
+  <ActiveSheet>1</ActiveSheet>
+  <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -990,11 +990,11 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">id</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="String">diagnosticreport-genetics</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">diagnosticreport-genetic</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">name</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">Diagnostic Report for Genetics</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">DiagnosticReport-Genetics</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">author.name</Data></Cell>
@@ -1023,7 +1023,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">published.structure</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">ReportForGenetics</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">DiagnosticReport-Genetics</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s75"><Data ss:Type="String">version</Data></Cell>
@@ -1056,6 +1056,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1075,7 +1076,6 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1083,10 +1083,10 @@
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="ReportForGenetics">
+ <Worksheet ss:Name="DiagnosticReport-Genetics">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="=ReportForGenetics!R1C1:R23C25" ss:Hidden="1"/>
+    ss:RefersTo="='DiagnosticReport-Genetics'!R1C1:R23C25" ss:Hidden="1"/>
   </Names>
   <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="25" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s86" ss:DefaultColumnWidth="65.400000000000006"
@@ -1771,7 +1771,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1792,8 +1791,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>12</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>22</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

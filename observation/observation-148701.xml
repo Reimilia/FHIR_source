@@ -1,0 +1,32 @@
+<Observation xmlns="http://hl7.org/fhir">
+   <id value="148701"/>
+   <meta>
+      <versionId value="1"/>
+      <lastUpdated value="2016-09-23T11:19:55.554-04:00"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/observationforgenetics"/>
+   </meta>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <div>TPMT gene mutations found [Identifier] in Blood or Tissue by Sequencing Nominal</div>
+      </div>
+   </text>
+   <extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsDNAVariantId">
+      <valueCodeableConcept>
+         <text value="del.g>a"/>
+      </valueCodeableConcept>
+   </extension>
+   <status value="final"/>
+   <code>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="80738-8"/>
+         <display value="TPMT gene mutations found [Identifier] in Blood or Tissue by Sequencing Nominal"/>
+      </coding>
+      <text value="TPMT gene mutations found [Identifier] in Blood or Tissue by Sequencing Nominal"/>
+   </code>
+   <subject>
+      <reference value="Patient/147051"/>
+      <display value="Pam Taylor"/>
+   </subject>
+</Observation>

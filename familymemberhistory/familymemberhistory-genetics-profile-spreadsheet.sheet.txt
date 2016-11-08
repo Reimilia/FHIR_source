@@ -26,6 +26,7 @@
   Element = FamilyMemberHistory.extension
   Profile Name = Observation
   Card. = 0..*
+  Must Support = Y
   Type = Extension{#observation}
 
 === Sheet Search =====================================

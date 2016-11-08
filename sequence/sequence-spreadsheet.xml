@@ -10,7 +10,7 @@
   <LastAuthor>Yi Wang</LastAuthor>
   <LastPrinted>2015-12-03T17:50:33Z</LastPrinted>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-11-03T14:18:31Z</LastSaved>
+  <LastSaved>2016-11-08T21:47:23Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -22,8 +22,7 @@
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>800</TabRatio>
-  <ActiveSheet>2</ActiveSheet>
-  <FirstVisibleSheet>2</FirstVisibleSheet>
+  <ActiveSheet>3</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -934,7 +933,6 @@
    </PageSetup>
    <Unsynced/>
    <Zoom>125</Zoom>
-   <TopRowVisible>6</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -3906,11 +3904,10 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>125</Zoom>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>14</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -3923,12 +3920,11 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>25</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>18</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -3978,35 +3974,35 @@
     <Cell ss:StyleID="s92"><Data ss:Type="String">token</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s124"><Data ss:Type="String">Sequence.referenceSeq.chromosome</Data></Cell>
-    <Cell ss:StyleID="s125"><Data ss:Type="String">Chromosome of the sequence</Data></Cell>
+    <Cell ss:StyleID="s125"><Data ss:Type="String">Chromosome number of the reference sequence</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s126"><Data ss:Type="String">start</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">number</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s127"><Data ss:Type="String">Sequence.variant.start</Data></Cell>
-    <Cell ss:StyleID="s128"><Data ss:Type="String">Start position (0-based inclusive, 1-based inclusive) of the sequence</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">Start position (0-based inclusive, 1-based inclusive) of the reference sequence</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s126"><Data ss:Type="String">end</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">number</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s127"><Data ss:Type="String">Sequence.variant.end</Data></Cell>
-    <Cell ss:StyleID="s128"><Data ss:Type="String">End position (0-based exclusive, 1-based inclusive) of the sequence</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">End position (0-based exclusive, 1-based inclusive) of the reference 0sequence</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="48">
     <Cell ss:StyleID="s102"><Data ss:Type="String">coordinate</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">composite</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"><Data ss:Type="String">chromosome &amp; start &amp; end</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">Genomic coordinate of the sequence. For example, a search for sequence in region 1:123-345 can be represented as `coordinate=1$lt345$gt123`</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">Genomic coordinate of the sequence string. For example, a search for sequence in region 1:123-345 can be represented as `coordinate=1$lt345$gt123`</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><Data ss:Type="String">type</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">token</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"><Data ss:Type="String">Sequence.type</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">The type of the variant: Amino acid / cDNA transcript / RNA variant.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">The type of the sequencing result: Amino Acid Sequence / DNA Sequence / RNA Sequence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="Default"><Data ss:Type="String">patient</Data></Cell>
@@ -4099,6 +4095,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>125</Zoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -4118,8 +4115,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

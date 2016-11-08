@@ -35,70 +35,78 @@ Here is a small-scale example: if 5' GCGATATCGCAAA 3' is the data, then GC..AAA 
 <p>
 The FASTA format constrians what a nucleotide or amino acid sequence will be transformed into a single text file. We hope that string can be constrained more than just any normal string. For example the nucleotide acid stirng should be constrianed within the range:
 
-<table>
-<tr>
-<li>A --> adenosine </li>
-<li>M --> A C (amino)</li>
-<li>U --> uridine </li>
-<li>H --> A C T</li>
-<li>V --> G C A</li>
-</tr>
-<tr>
-<li>C --> cytidine</li> 
-<li>S --> G C (strong)</li>
-<li>D --> G A T</li>
-<li>K --> G T (keto)</li>
-</tr>
-<tr>
-<li>G --> guanine </li>
-<li>W --> A T (weak)</li>
-<li>R --> G A (purine)</li> 
-<li>N --> A G C T (any)</li>
-</tr>
-<tr>
-<li>T --> thymidine</li>
-<li>B --> G T C</li>
-<li>Y --> T C (pyrimidine)</li> 
-<li>- --> gap of indeterminate length  </li>
-</tr>
-</table>
+　<table>
+    <tr>
+      <td>A --> adenosine </td>
+      <td>M --> A C (amino)</td>
+      <td>U --> uridine </td>
+      <td>H --> A C T</td>
+      <td>V --> G C A</td>
+    </tr>
+    <tr>
+      <td>C --> cytidine</td> 
+      <td>S --> G C (strong)</td>
+      <td>D --> G A T</td>
+    <td>K --> G T (keto)</td>
+    </tr>
+    <tr>
+      <td>G --> guanine </td>
+      <td>W --> A T (weak)</td>
+      <td>R --> G A (purine)</td> 
+      <td>N --> A G C T (any)</td>
+    </tr>
+    <tr>
+      <td>T --> thymidine</td>
+      <td>B --> G T C</td>
+      <td>Y --> T C (pyrimidine)</td> 
+      <td>- --> gap of indeterminate length  </td>
+    </tr>
+  </table>
 
 while the amino acid string should be constrained within the range:
 
-<table>
-<tr>
-<li>A alanine </li><li>P proline</li>
-<li>B aspartate or asparagine</li><li> Q glutamine</li>
-</tr>
-<tr>
-
-<li>C cystine </li><li>R arginine</li>
-<li>D aspartate</li><li> S serine</li>
-</tr>
-<tr>
-
-<li>E glutamate </li><li>T threonine</li>
-<li>F phenylalanine </li><li>U selenocysteine</li>
-</tr>
-<tr>
-
-<li>G glycine </li><li>V valine</li>
-<li>H histidine </li><li>W tryptophan </li>
-</tr>
-<tr>
-
-<li>I isoleucine </li><li>Y tyrosine </li>
-<li>K lysine </li><li>Z glutamate or glutamine</li>
-</tr>
-<tr>
-
-<li>L leucine</li><li> X any </li>
-<li>M methionine </li><li>* translation stop </li>
-</tr>
-<tr>
-
-<li>N asparagine </li><li>- gap of indeterminate length </li>
-</tr>
+  <table>
+    <tr>
+      <td>A alanine </td>
+      <td>P proline</td>
+      <td>B aspartate or asparagine</td>
+      <td>Q glutamine</td>
+    </tr>
+    <tr>
+      <td>C cystine </td>
+      <td>R arginine</td>
+      <td>D aspartate</td>
+      <td>S serine</td>
+    </tr>
+    <tr>
+      <td>E glutamate </td>
+      <td>T threonine</td>
+      <td>F phenylalanine </td>
+      <td>U selenocysteine</td>
+    </tr>
+    <tr>
+      <td>G glycine </td>
+      <td>V valine</td>
+      <td>H histidine </td>
+      <td>W tryptophan </td>
+    </tr>
+    <tr>
+      <td>I isoleucine </td>
+      <td>Y tyrosine </td>
+      <td>K lysine </td>
+      <td>Z glutamate or glutamine</td>
+    </tr>
+    <tr>
+      <td>L leucine</td>
+      <td> X any </td>
+      <td>M methionine </td>
+      <td>* translation stop </td>
+    </tr>
+    <tr>
+      <td>N asparagine </td>
+      <td>- gap of indeterminate length </td>
+    </tr>
+  </table>
 
 </p>
 

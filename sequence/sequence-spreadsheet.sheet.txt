@@ -506,8 +506,8 @@
   Element = Sequence.identifier
   Card. = 0..*
   Type = Identifier
-  Short Name = Unique ID for this particular sequence
-  Definition = A unique identifier for this particular sequence instance.
+  Short Name = Unique ID for this particular sequence. This is a FHIR defined identifier.
+  Definition = A unique identifier for this particular sequence instance. This is a FHIR defined identifier.
   Requirements = Allows sequences to be distinguished and referenced
   w5 = id
 
@@ -551,8 +551,8 @@
   Element = Sequence.quantity
   Card. = 0..1
   Type = Quantity
-  Short Name = Quantity of the sequence
-  Definition = Quantity of the sequence.
+  Short Name = The number of copies of the seqeunce of interest.  (RNASeq)
+  Definition = The number of copies of the seqeunce of interest. (RNASeq)
 
  -- Row 9 -----------------------------------
   Element = Sequence.referenceSeq
@@ -907,101 +907,3 @@
   Type = integer
   Short Name = Structural Variant Inner Start-End
   Definition = Structural Variant Inner Start-End.
-
-=== Sheet Search =====================================
-
- -- Row 1 -----------------------------------
-  Name = chromosome
-  Type = token
-  Description = Chromosome of the sequence
-  Path = Sequence.referenceSeq.chromosome
-
- -- Row 2 -----------------------------------
-  Name = start
-  Type = number
-  Description = Start position (0-based inclusive, 1-based inclusive) of the sequence
-  Path = Sequence.variant.start
-
- -- Row 3 -----------------------------------
-  Name = end
-  Type = number
-  Description = End position (0-based exclusive, 1-based inclusive) of the sequence
-  Path = Sequence.variant.end
-
- -- Row 4 -----------------------------------
-  Name = coordinate
-  Type = composite
-  Description = Genomic coordinate of the sequence. For example, a search for sequence in region 1:123-345 can be represented as `coordinate=1$lt345$gt123`
-  Path = chromosome & start & end
-
- -- Row 5 -----------------------------------
-  Name = type
-  Type = token
-  Description = The type of the variant: Amino acid / cDNA transcript / RNA variant.
-  Path = Sequence.type
-
- -- Row 6 -----------------------------------
-  Name = patient
-  Type = reference
-  Description = The subject that the observation is about
-  Path = Sequence.patient
-
- -- Row 7 -----------------------------------
-  Name = identifier
-  Type = token
-  Description = The unique identity for a particular sequence
-  Path = Sequence.identifier
-
-=== Sheet Profiles =====================================
-
-=== Sheet Examples =====================================
-
- -- Row 1 -----------------------------------
-  Name = Example of Sequence
-  Identity = example
-  Description = Simple sequence example
-  Filename = sequence-example.xml
-
- -- Row 2 -----------------------------------
-  Name = !Sequence example for graph scenario 1
-  Identity = sequence-1
-  Description = Sequence Graphic example-1
-  Filename = sequence-graphic-example-1.xml
-
- -- Row 3 -----------------------------------
-  Name = !Sequence example for graph scenario 2
-  Identity = sequence-2
-  Description = Sequence Graphic example-2
-  Filename = sequence-graphic-example-2.xml
-
- -- Row 4 -----------------------------------
-  Name = !Sequence example for graph scenario 3
-  Identity = sequence-3
-  Description = Sequence Graphic example-3
-  Filename = sequence-graphic-example-3.xml
-
- -- Row 5 -----------------------------------
-  Name = !Sequence example for graph scenario 4
-  Identity = sequence-4
-  Description = Sequence Graphic example-4
-  Filename = sequence-graphic-example-4.xml
-
- -- Row 6 -----------------------------------
-  Name = !Sequence example for graph scenario 5
-  Identity = sequence-5
-  Description = Sequence Graphic example-5
-  Filename = sequence-graphic-example-5.xml
-
- -- Row 7 -----------------------------------
-  Name = !Sequence example for graph scenario 6
-  Identity = sequence-6
-  Description = Sequence Graphic example-6
-  Filename = sequence-graphic-example-6.xml
-
- -- Row 8 -----------------------------------
-  Name = Sequence example for precisionFDA
-  Identity = fda-example
-  Description = Sequence example from precisionFDA
-  Filename = sequence-example-fda.xml
-
-=== Sheet Examples =====================================

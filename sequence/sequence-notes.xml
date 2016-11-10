@@ -16,10 +16,6 @@
 	For example, ACGTGCAT will be numbered from 1 to 8 in 1-based system and will be numbered from 0 to 8 in 0-based system to mark flanks (i.e. place between two Nucleotide). So the interval [3,5] in 1-based system is GTG while interval [2,5) in 0-based system is same segment GTG.
 </p>
 
-<h3>Coordinate Parameter Search</h3>
-
-To do.
-
 <h3>Strand of DNA </h3>
 
 <p>
@@ -33,7 +29,7 @@ Here is a small-scale example: if 5' GCGATATCGCAAA 3' is the data, then GC..AAA 
 
 <h3> String usage for Reference Sequence and Observed Sequence </h3>
 <p>
-The FASTA format constrians what a nucleotide or amino acid sequence will be transformed into a single text file. We hope that string can be constrained more than just any normal string. For example the nucleotide acid stirng should be constrianed within the range:
+We hope that string of <b>observedSeq</b> can be constrained more than just any normal string but with notation tables. Here we present what the nucleotide acid stirng should be constrianed within the range:
 
 　<table>
     <tr>

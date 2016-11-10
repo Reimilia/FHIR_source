@@ -21,6 +21,8 @@
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>663</TabRatio>
+  <ActiveSheet>7</ActiveSheet>
+  <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -985,7 +987,6 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
-   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
@@ -6738,7 +6739,7 @@
    <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=Examples!R1C1:R2C7"
     ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="33" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="37" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s160" ss:DefaultColumnWidth="260.39999999999998"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s160" ss:AutoFitWidth="0" ss:Width="143.4"/>
@@ -7047,6 +7048,38 @@
     <Cell><Data ss:Type="String">observation-example-bmd.xml</Data></Cell>
     <Cell ss:Index="7"><Data ss:Type="String">n</Data></Cell>
    </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Diplotype(with Sequence Ref)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Example of diplotype data (with sequence resource as reference)</Data></Cell>
+    <Cell><Data ss:Type="String">example-diplotype-withseq</Data></Cell>
+    <Cell><Data ss:Type="String">obs-genetics-example-diplotype_withseq.xml</Data></Cell>
+    <Cell><Data ss:Type="String">Observation-Genetics</Data></Cell>
+    <Cell><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Diplotype(with Haplotypes Ref)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Example of diplotype data (with haplotypes observation as reference)</Data></Cell>
+    <Cell><Data ss:Type="String">example-diplotype-withhap</Data></Cell>
+    <Cell><Data ss:Type="String">obs-genetics-example-diplotype_with_Haplotype.xml</Data></Cell>
+    <Cell><Data ss:Type="String">Observation-Genetics</Data></Cell>
+    <Cell><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Haplotype</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Example of haplotype data</Data></Cell>
+    <Cell><Data ss:Type="String">example-haplotype</Data></Cell>
+    <Cell><Data ss:Type="String">observation-example-haplotype.xml</Data></Cell>
+    <Cell><Data ss:Type="String">Observation-Genetics</Data></Cell>
+    <Cell><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Phenotype</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">Example of phenotype data</Data></Cell>
+    <Cell><Data ss:Type="String">example-phenotype</Data></Cell>
+    <Cell><Data ss:Type="String">observation-example-phenotype.xml</Data></Cell>
+    <Cell><Data ss:Type="String">Observation-Genetics</Data></Cell>
+    <Cell><Data ss:Type="String">n</Data></Cell>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
@@ -7061,12 +7094,13 @@
     <VerticalResolution>-4</VerticalResolution>
    </Print>
    <Zoom>125</Zoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>22</TopRowBottomPane>
+   <TopRowBottomPane>19</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <LeftColumnRightPane>5</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -7074,6 +7108,7 @@
     </Pane>
     <Pane>
      <Number>1</Number>
+     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
@@ -7081,8 +7116,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>43</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>36</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

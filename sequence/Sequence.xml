@@ -1,0 +1,44 @@
+<Sequence xmlns="http://hl7.org/fhir">
+    <id value="example"/>
+    <type value="DNA"/>
+    <coordinateSystem value="0"/>
+    <patient>
+        <reference value="Patient/example"/>
+    </patient>
+    <!--referenceSeq>
+        <referenceSeqId>
+          <coding>
+            <system value="http://www.ncbi.nlm.nih.gov/nuccore"/>
+            <code value="NG_007726.3"/>
+          </coding>
+        </referenceSeqId>
+        <strand value="1"/>
+        <windowStart value="55227970"/>
+        <windowEnd value="55227980"/>
+    </referenceSeq-->
+    <url value="http://hl7.org/fhir/ValueSet/chromosome-human"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.4.642.2.523"/>
+    </identifier>
+    <version value="1.7.0"/>
+    <code>
+        <coding>
+            <code value="7"/>
+            <display value="chromsome 7"/>
+            <Definition value="chromsome 7"/>
+        </coding>
+    </code>
+    <variant>
+        <start value="55227976"/>
+        <end value="55227977"/>
+        <observedAllele value="G"/>
+        <referenceAllele value="T"/>
+    </variant>
+    <repository>
+        <url value="https://genomics.googleapis.com/$discovery/rest?version=v1alpha2"/>
+        <type value="directlink"/>
+        <name value="ga4gh"/>
+        <variantId value="V1A2"/>
+    </repository>
+</Sequence>

@@ -1,5 +1,5 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="example-phenotype"/>
+	<id value="example-diplotype-withhap"/>
 	<extension>
 		<url value="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene"/>
 		<valueCodeableConcept>
@@ -13,23 +13,17 @@
 	<status value="final"/>
 	<code>
 		<coding>
-			<system value="http://loinc.org"/>
-			<code value="79716-7"/>
-			<display value="CYP2C9 gene product metabolic activity interpretation"/>
+			<system value="http://snomed.info"/>
+			<code value="363779003"/>
+			<display value="Genotype determination"/>
 		</coding>
+		<text value="Diplotype Call"/>
 	</code>
 	<subject>
 		<reference value="Patient/727127"/>
 		<display value="J*********** C***********"/>
 	</subject>
 	<issued value="2013-04-03T15:30:10+01:00"/>
-	<valueCodeableConcept>
-		<coding>
-			<system value="http://loinc.org"/>
-			<code value="LA25391-6"/>
-			<display value="Normal metabolizer"/>
-		</coding>
-	</valueCodeableConcept>
 	<specimen>
 		<reference value="Specimen/genetics-example1-somatic"/>
 		<display value="Molecular Specimen ID: MLD45-Z4-1234"/>
@@ -37,7 +31,13 @@
 	<related>
 		<type value="derived-from"/>
 		<target>
-			<reference value="Observation/example-diplotype"/>
+			<reference value="Observation/example-haplotype1"/>
+		</target>
+	</related>
+	<related>
+		<type value="derived-from"/>
+		<target>
+			<reference value="Observation/example-haplotype2"/>
 		</target>
 	</related>
 </Observation>

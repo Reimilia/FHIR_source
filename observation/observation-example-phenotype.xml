@@ -1,7 +1,6 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="example-phenotype"/>
-	<extension>
-		<url value="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene">
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://www.genenames.org"/>

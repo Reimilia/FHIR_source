@@ -1,8 +1,7 @@
 <!-->The method to register an extension, you can see the extension-11179-de-administrative-status.xml.html<-->
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="example-haplotype"/>
-	<extension>
-		<url value="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene">
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://www.genenames.org"/>
@@ -11,10 +10,14 @@
 			</coding>
 		</valueCodeableConcept>
 	</extension>
-	<extension>
-		<url value="http://hl7.org/fhir/2016Sep/extension-observation-geneticssequence.html"/>
+	<extension url="http://hl7.org/fhir/2016Sep/extension-observation-geneticssequence.html">
 		<valueReference>
-			<reference value="Sequence/example-sequence"/>
+			<reference value="Sequence/example-sequence1"/>
+		</valueReference>
+	</extension>
+	<extension url="http://hl7.org/fhir/2016Sep/extension-observation-geneticssequence.html">
+		<valueReference>
+			<reference value="Sequence/example-sequence2"/>
 		</valueReference>
 	</extension>
 	<subject>

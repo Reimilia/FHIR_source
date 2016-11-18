@@ -1,7 +1,6 @@
 <Observation xmlns="http://hl7.org/fhir">
-	<id value="example-diplotype-withhap"/>
-	<extension>
-		<url value="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene"/>
+	<id value="example-diplotype1"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/observation-geneticsGene">
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://www.genenames.org"/>

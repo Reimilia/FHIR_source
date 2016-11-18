@@ -402,4 +402,11 @@
   Filename = diagnosticrequest-genetics-example-2.xml
   Profile = Diagnostic Request-Genetics
 
+ -- Row 6 -----------------------------------
+  Name = PGx
+  Identity = example-diagnosticrequest-pgx
+  Description = PGx Phenotype example
+  Filename = diagnosticrequest-example-pgx.xml
+  Profile = Diagnostic Request-Genetics
+
 === Sheet Examples =====================================

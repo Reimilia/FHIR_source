@@ -113,7 +113,7 @@ table th {
     </ul>
   </p>
   <p>
-    With these resource and profiles, FHIR can support a large set of clinical use cases (see <a href="#dam">Section 9</a>, <a href="#other_examples">10</a> , and <a href="#apps">11</a>) and is thus positioned to address all emergent -omics use cases, including Next-Generation Sequencing (<abbr title="Next-Generation Sequencing">NGS</abbr>). 
+    With these resource and profiles, FHIR can support a large set of clinical use cases (see <a href="#dam">Section 9</a>, <a href="#other_examples">10</a> , and <a href="#apps">11</a>) and is thus positioned to address all emergent -omics use cases, including Next-Generation Sequencing (<abbr title="Next-Generation Sequencing">NGS</abbr>).
     These tools are simple to implement, will optimize payload sizes, and help developers avoid redundant retrieval of data.  <a href="#history">Appendix 1</a> of this document shows how DSTU 2.0 can be mapped to the new additions to the resource.
   </p>
 
@@ -123,7 +123,7 @@ table th {
   <h3>Structure Diagram</h3>
 
 <!--[%resource-table Sequence%]-->
-  
+
   <h3>Description</h3>
   <p>
     The <a href="sequence.html">Sequence resource</a> is designed for next-generation sequencing data.  Patients' observed sequences should be represented by recording reference sequence id/string and detected variants.
@@ -390,7 +390,7 @@ Source: <a href="diagnosticreport-genetics-comprehensive-bone-marrow-report.xml.
     <li>Full Genotype</li>
     <li>Consensus Sequence</li>
     <li>Novel Polymorphisms</li>
-    <li>Platform Documentation</li> 
+    <li>Platform Documentation</li>
     <li>Read Processing Documentation</li>
     <li>Primary Data</li>
   </ol>
@@ -724,11 +724,65 @@ Source: <a href="diagnosticreport-genetics-comprehensive-bone-marrow-report.xml.
 
 <h3>Usage example</h3>
 
+<p>
+  This picture depicts the logical relationship among these resources. And the definition of pointers are described above:
+</p>
+
 <img alt="" src="genomics-image09.png" style="width: 624.00px; height: 457.33px;"/>
 
 <p>
-  This use case depicts the whole story of FHIR in the clinical genomics setting: an order is requested, then test results are reported. A Sequence instance and two Observation instances for further interpretation are also created.
+  Here are the details and examples mentioned above.
 </p>
+
+<table style="width:100%">
+            <tr>
+    <th>Resource</th>
+    <th>Details of data structures and pointers</th>
+    <th>Links of resources example (xml code)</th>
+            </tr>
+            <tr>
+    <td>Sequence</td>
+    <td><a href="#sequence">Sequence Data Structure</a></td>
+    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/sequence-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/sequence-example.xml.html</a></td>
+            </tr>
+            <tr>
+    <td>Observation</td>
+    <td><a href="#observation-genetics">Observation Data Structure</a></td>
+    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example.html">https://bcl-lab.github.io/FHIR_CG_web/observation-example.html</a></td>
+            </tr>
+            <tr>
+    <td>DiagnosticRequest</td>
+    <td><a href="#diagnosticrequest-genetics">DiagnosticRequest Data Structure</a></td>
+    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-lipid.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-lipid.xml.html</a></td>
+  </tr>
+  <tr>
+    <td>DiagnosticReport</td>
+    <td><a href="#diagnosticreport-genetics">DiagnosticReport Data Structure</a></td>
+    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example.xml.html</a></td>
+  </tr>
+  <tr>
+    <td>51961-1</td>
+    <td>Drug Efficacy Sequence Variant Interpretation</td>
+    <td>Predicted phenotype for ability of drug to bind to intended site in order to deliver intended effect. A Sequence Variant interpretation
+    value known to allow (responsive) or prevent (resistant) the drug to perform.</td>
+  </tr>
+</table>
+
+<p>
+  Here is a specific use case to depict the whole story of FHIR in the clinical genomics setting: a <a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-pgx.xml.html">Diagnosticrequest</a> is requested, then a <a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example-pgx.xml.html">Diagnosticreport</a> are reported. Two <a href="https://bcl-lab.github.io/FHIR_CG_web/sequence-example-pgx-1.xml.html">Sequence</a> instance, two <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-haplotype1.html">Observation-haplotype</a> instance, a <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-diplotype1.html">Observation-diplotype</a> and a <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-phenotype.xml.html">Observation-phenotype</a> for further interpretation are also created. (You can see the xml code and json code if you click the link.)
+  <ul>
+    <li><b>Haplotype:</b> A haplotype is a set of DNA variations, or polymorphisms, that tend to be inherited together. A haplotype can refer to a combination of alleles or to a set of single nucleotide polymorphisms (SNPs) found on the same chromosome.</li>
+    <li><b>Diplotype:</b> A diplotype is defined as a specific combination of two haplotypes.</li>
+    <li><b>Genotype:</b> A genotype is an individual’s collection of genes.</li>
+    <li><b>Phenotype:</b> A phenotype is the composite of an organism’s observable characteristics or traits, such as its morphology, development, biochemical or physiological properties, behavior and products of behavior.</li>
+  </ul>
+</p>
+
+<p>
+  You can see the relationship among these resources in following picture:
+</p>
+
+<img alt="" src="genomics-image-new-example.png" style="width: 624.00px; height: 428.00px;"/>
 
 <a name="dam"> </a>
 <h2>HL7 Domain Analysis Use Cases</h2>

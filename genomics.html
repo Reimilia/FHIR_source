@@ -731,7 +731,7 @@ Source: <a href="diagnosticreport-genetics-comprehensive-bone-marrow-report.xml.
 <img alt="" src="genomics-image09.png" style="width: 624.00px; height: 457.33px;"/>
 
 <p>
-  Here are the details and examples mentioned above.
+    Here are the details and examples of the resources mentioned above, and the pointers are be clarified at the beginning:
 </p>
 
 <table style="width:100%">
@@ -743,33 +743,27 @@ Source: <a href="diagnosticreport-genetics-comprehensive-bone-marrow-report.xml.
             <tr>
     <td>Sequence</td>
     <td><a href="#sequence">Sequence Data Structure</a></td>
-    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/sequence-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/sequence-example.xml.html</a></td>
+    <td><a href="sequence-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/sequence-example.xml.html</a></td>
             </tr>
             <tr>
     <td>Observation</td>
     <td><a href="#observation-genetics">Observation Data Structure</a></td>
-    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example.html">https://bcl-lab.github.io/FHIR_CG_web/observation-example.html</a></td>
+    <td><a href="observation-example.html">https://bcl-lab.github.io/FHIR_CG_web/observation-example.html</a></td>
             </tr>
             <tr>
     <td>DiagnosticRequest</td>
     <td><a href="#diagnosticrequest-genetics">DiagnosticRequest Data Structure</a></td>
-    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-lipid.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-lipid.xml.html</a></td>
+    <td><a href="diagnosticrequest-example-lipid.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-lipid.xml.html</a></td>
   </tr>
   <tr>
     <td>DiagnosticReport</td>
     <td><a href="#diagnosticreport-genetics">DiagnosticReport Data Structure</a></td>
-    <td><a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example.xml.html</a></td>
-  </tr>
-  <tr>
-    <td>51961-1</td>
-    <td>Drug Efficacy Sequence Variant Interpretation</td>
-    <td>Predicted phenotype for ability of drug to bind to intended site in order to deliver intended effect. A Sequence Variant interpretation
-    value known to allow (responsive) or prevent (resistant) the drug to perform.</td>
+    <td><a href="diagnosticreport-example.xml.html">https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example.xml.html</a></td>
   </tr>
 </table>
 
 <p>
-  Here is a specific use case to depict the whole story of FHIR in the clinical genomics setting: a <a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticrequest-example-pgx.xml.html">Diagnosticrequest</a> is requested, then a <a href="https://bcl-lab.github.io/FHIR_CG_web/diagnosticreport-example-pgx.xml.html">Diagnosticreport</a> are reported. Two <a href="https://bcl-lab.github.io/FHIR_CG_web/sequence-example-pgx-1.xml.html">Sequence</a> instance, two <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-haplotype1.html">Observation-haplotype</a> instance, a <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-diplotype1.html">Observation-diplotype</a> and a <a href="https://bcl-lab.github.io/FHIR_CG_web/observation-example-phenotype.xml.html">Observation-phenotype</a> for further interpretation are also created. (You can see the xml code and json code if you click the link.)
+  Here is a specific use case to depict the whole story of FHIR in the clinical genomics setting: a <a href="diagnosticrequest-example-pgx.xml.html">Diagnosticrequest</a> is requested, then a <a href="diagnosticreport-example-pgx.xml.html">Diagnosticreport</a> are reported. Two <a href="sequence-example-pgx-1.xml.html">Sequence</a> instance, two <a href="observation-example-haplotype1.html">Observation-haplotype</a> instance, a <a href="observation-example-diplotype1.html">Observation-diplotype</a> and a <a href="observation-example-phenotype.xml.html">Observation-phenotype</a> for further interpretation are also created. (You can see the xml code and json code if you click the link.)
   <ul>
     <li><b>Haplotype:</b> A haplotype is a set of DNA variations, or polymorphisms, that tend to be inherited together. A haplotype can refer to a combination of alleles or to a set of single nucleotide polymorphisms (SNPs) found on the same chromosome.</li>
     <li><b>Diplotype:</b> A diplotype is defined as a specific combination of two haplotypes.</li>

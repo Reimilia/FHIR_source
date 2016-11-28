@@ -14,6 +14,10 @@
    <extension url="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent">
       <extension url="type">
          <valueCodeableConcept>
+            <coding>
+               <code value="PRN"/>
+               <display value="parent"/>
+            </coding>
             <text value="mother"/>
          </valueCodeableConcept>
       </extension>

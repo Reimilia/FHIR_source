@@ -10,7 +10,7 @@
   <LastAuthor>Yi Wang</LastAuthor>
   <LastPrinted>2015-12-03T17:50:33Z</LastPrinted>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-11-10T04:10:07Z</LastSaved>
+  <LastSaved>2016-11-18T20:36:49Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -22,7 +22,7 @@
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>800</TabRatio>
-  <ActiveSheet>7</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -808,14 +808,14 @@
   <Style ss:ID="s157">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
    <Borders>
-    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
    <Interior/>
   </Style>
   <Style ss:ID="s158">
    <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
    <Borders>
-    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
    <Interior/>
   </Style>
@@ -1502,6 +1502,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>27</ActiveRow>
+     <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1513,10 +1514,10 @@
  </Worksheet>
  <Worksheet ss:Name="Data Elements">
   <Names>
-   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="='Data Elements'!R1C1:R99C24"
-    ss:Hidden="1"/>
+   <NamedRange ss:Name="_FilterDatabase"
+    ss:RefersTo="='Data Elements'!R1C1:R102C24" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="118" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="121" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s83" ss:DefaultColumnWidth="65.400000000000006"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s84" ss:AutoFitWidth="0" ss:Width="213.60000000000002"/>
@@ -1688,9 +1689,9 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Unique ID for this particular sequence. This is a FHIR defined identifier.</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Unique ID for this particular sequence. This is a FHIR-defined id</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">A unique identifier for this particular sequence instance. This is a FHIR defined identifier.</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">A unique identifier for this particular sequence instance. This is a FHIR-defined id</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Allows sequences to be distinguished and referenced</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1740,7 +1741,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="14" ss:StyleID="s103"><Data ss:Type="String">Who and/or what this is about</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">The patient whose sequencing results are described by this resource.</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">The patient whose sequencing results are described by this resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1765,7 +1766,20 @@
     <Cell ss:Index="9" ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="14"><Data ss:Type="String">The method for sequencing</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">The method for sequencing, for example, chip information.</Data><NamedCell
+    <Cell><Data ss:Type="String">The method for sequencing, for example, chip information</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Sequence.peformer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="3" ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Reference(Organization)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="9" ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="14"><Data ss:Type="String">Who should be responsible for test result</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">The organization or lab that should be responsible for this result. </Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1799,7 +1813,7 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Reference sequence</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">A sequence file that is used as a reference to describe variants that are present in a sequence analyzed.</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">A sequence file that is used as a reference to describe variants that are present in a sequence analyzed</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1937,7 +1951,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Sequence.referenceSeq.strand</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">1..1</Data><NamedCell
+    <Cell ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">integer</Data><NamedCell
@@ -1950,9 +1964,9 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Directionality of strand of DNA ( +1/-1)</Data><NamedCell
+    <Cell><Data ss:Type="String">Directionality of DNA ( +1/-1)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Directionality of strand of DNA. Available values are &quot;1&quot; for the plus strand (5' to 3')  and &quot;-1&quot; for the minus strand(3' to 5').</Data><NamedCell
+    <Cell><Data ss:Type="String">Directionality of DNA sequence. Available values are &quot;1&quot; for the plus strand (5' to 3')/Watson/Sense/positive  and &quot;-1&quot; for the minus strand(3' to 5')/Crick/Antisense/negative.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2354,9 +2368,9 @@
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">External repository which identificate  patients' observedSeq</Data><NamedCell
+    <Cell ss:StyleID="s108"><Data ss:Type="String">External repository which contains detailed report related with observedSeq in this resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">Configurations of the external repository. The repository shall store patients' observedSeq or identification of patients' observedSeq.</Data><NamedCell
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2463,7 +2477,69 @@
     <Cell ss:StyleID="s110"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Sequence.repository.variantId</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Sequence.repository.datasetId</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">string</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Id of the dataset that used to call for dataset in repository</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Sequence.repository.variantsetId</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">string</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Id of the variantset that used to call for variantset in repository</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s78"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s109"><Data ss:Type="String">!Sequence.repository.variantId</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
@@ -2485,7 +2561,7 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell><Data ss:Type="String">Sequence.repository.readId</Data><NamedCell
+    <Cell><Data ss:Type="String">Sequence.repository.readsetId</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="3" ss:StyleID="s102"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3931,12 +4007,13 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>125</Zoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <LeftColumnRightPane>13</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3944,21 +4021,21 @@
     </Pane>
     <Pane>
      <Number>1</Number>
+     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>8</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
    <ProtectScenarios>False</ProtectScenarios>
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
   </WorksheetOptions>
-  <AutoFilter x:Range="R1C1:R99C24"
+  <AutoFilter x:Range="R1C1:R102C24"
    xmlns="urn:schemas-microsoft-com:office:excel">
   </AutoFilter>
  </Worksheet>
@@ -4008,21 +4085,23 @@
     <Cell ss:StyleID="s102"><Data ss:Type="String">number</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s127"><Data ss:Type="String">Sequence.variant.start</Data></Cell>
-    <Cell ss:StyleID="s128"><Data ss:Type="String">Start position (0-based inclusive, 1-based inclusive) of the reference sequence</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">Start position (0-based inclusive, 1-based inclusive, that means the nucleic acid or amino acid at this position will be included) of the reference sequence.</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s126"><Data ss:Type="String">end</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">number</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s127"><Data ss:Type="String">Sequence.variant.end</Data></Cell>
-    <Cell ss:StyleID="s128"><Data ss:Type="String">End position (0-based exclusive, 1-based inclusive) of the reference 0sequence</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">End position (0-based exclusive, which menas the acid at this position will not be included, 1-based inclusive, which means the acid at this position will be included) of the reference sequence.</Data></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="48">
+   <Row ss:AutoFitHeight="0" ss:Height="21">
     <Cell ss:StyleID="s102"><Data ss:Type="String">coordinate</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">composite</Data></Cell>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"><Data ss:Type="String">chromosome &amp; start &amp; end</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">Genomic coordinate of the reference sequence string. For example, a search for sequence in region 1:123-345 can be represented as `coordinate=1$lt345$gt123`</Data></Cell>
+    <Cell ss:StyleID="s102"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Search parameter for region of the reference sequence string. This will refer to part of a locus or part of a gene where search region will be represented in </Font><B><Font
+        html:Color="#000000">1-based system</Font></B><Font html:Color="#000000">. Since the coordinateSystem can either be 0-based or 1-based, this search query will include the result of both coordinateSystem that contains the equivalent segment of the gene or whole genome sequence. For example, a search for sequence can be represented as `coordinate=1$lt345$gt123`, this means it will search for the Sequence resource on chromosome 1 and with position &gt;123 and &lt;345, where in 1-based system resource, all strings within region 1:124-344 will be revealed, while in 0-based system resource, all strings within region 1:123-344 will be revealed. You may want to check detail about 0-based v.s. 1-based above.</Font></ss:Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><Data ss:Type="String">type</Data></Cell>
@@ -4141,7 +4220,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5084,7 +5164,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>3</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>3</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -5098,10 +5178,12 @@
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
      <ActiveRow>27</ActiveRow>
+     <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5392,6 +5474,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
+     <ActiveRow>21</ActiveRow>
      <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
@@ -5460,53 +5543,53 @@
     <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-example.xml</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s138"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data><NamedCell
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s152"><Data ss:Type="String">!Sequence example for graph scenario 1</Data></Cell>
+    <Cell ss:StyleID="s152"><Data ss:Type="String">Sequence graph scenario 1</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s97"><Data ss:Type="String">Sequence Graphic example-1</Data></Cell>
-    <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-1</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">graphic-example-1</Data></Cell>
     <Cell ss:StyleID="s152"><Data ss:Type="String">sequence-graphic-example-1.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s152"><Data ss:Type="String">!Sequence example for graph scenario 2</Data></Cell>
+    <Cell ss:StyleID="s152"><Data ss:Type="String">Sequence graph scenario 2</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s97"><Data ss:Type="String">Sequence Graphic example-2</Data></Cell>
-    <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-2</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">graphic-example-2</Data></Cell>
     <Cell ss:StyleID="s152"><Data ss:Type="String">sequence-graphic-example-2.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s152"><Data ss:Type="String">!Sequence example for graph scenario 3</Data></Cell>
+    <Cell ss:StyleID="s152"><Data ss:Type="String">Sequence graph scenario 3</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s97"><Data ss:Type="String">Sequence Graphic example-3</Data></Cell>
-    <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-3</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">graphic-example-3</Data></Cell>
     <Cell ss:StyleID="s152"><Data ss:Type="String">sequence-graphic-example-3.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s152"><Data ss:Type="String">!Sequence example for graph scenario 4</Data></Cell>
+    <Cell ss:StyleID="s152"><Data ss:Type="String">Sequence graph scenario 4</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s97"><Data ss:Type="String">Sequence Graphic example-4</Data></Cell>
-    <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-4</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">graphic-example-4</Data></Cell>
     <Cell ss:StyleID="s152"><Data ss:Type="String">sequence-graphic-example-4.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s153"><Data ss:Type="String">!Sequence example for graph scenario 5</Data></Cell>
+    <Cell ss:StyleID="s153"><Data ss:Type="String">Sequence graph scenario 5</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell ss:StyleID="s97"><Data ss:Type="String">Sequence Graphic example-5</Data></Cell>
-    <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-5</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">graphic-example-5</Data></Cell>
     <Cell ss:StyleID="s152"><Data ss:Type="String">sequence-graphic-example-5.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s152"><Data ss:Type="String">!Sequence example for graph scenario 6</Data></Cell>
@@ -5515,16 +5598,16 @@
     <Cell ss:StyleID="s92"><Data ss:Type="String">sequence-6</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">sequence-graphic-example-6.xml</Data></Cell>
     <Cell ss:StyleID="s152"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s153"><Data ss:Type="String">!Sequence example for precisionFDA</Data></Cell>
+    <Cell ss:StyleID="s153"><Data ss:Type="String">Sequence example for precisionFDA</Data></Cell>
     <Cell ss:StyleID="s92"/>
     <Cell><Data ss:Type="String">Sequence example from precisionFDA</Data></Cell>
     <Cell ss:StyleID="s92"><Data ss:Type="String">fda-example</Data></Cell>
     <Cell ss:StyleID="s102"><Data ss:Type="String">sequence-example-fda.xml</Data></Cell>
     <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Complex Variations</Data></Cell>
@@ -5533,286 +5616,286 @@
     <Cell ss:StyleID="s154"><Data ss:Type="String">sequence-complex-variant</Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">sequence-complex-variant.xml</Data></Cell>
     <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s155"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s155"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="Default"><Data ss:Type="String">Single Variant</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Variant refer to a haplotype observation</Data></Cell>
     <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s156"><Data ss:Type="String">Example of a single varaint on a reference Sequence</Data></Cell>
-    <Cell ss:StyleID="s154"><Data ss:Type="String">example-1</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">sequence-example-1.xml</Data></Cell>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">Example of a single varaint on a reference Sequence related to a haplotype observation in PGx example</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">example-pgx-1</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">sequence-example-pgx-1.xml</Data></Cell>
     <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="s155"><Data ss:Type="String">y</Data></Cell>
+    <Cell ss:StyleID="s155"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Another variant refer to a haplotype observation</Data></Cell>
     <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">Example of another single varaint on a reference Sequence related to a haplotype observation in PGx example, which will form with the other haplotype data to be a diplotype observation.</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">example-pgx-2</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">sequence-example-pgx-2.xml</Data></Cell>
     <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s155"><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sequence example for 0-based coordinatesytem usage</Data></Cell>
     <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">Example of a record with 0-based coordinatesystem</Data></Cell>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">coord-0-base</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">coord-0base-example.xml</Data></Cell>
     <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s155"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
-    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Sequence example for 1-based coordinatesytem usage</Data></Cell>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">Example of a record with 1-based coordinatesystem</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">coord-1-base</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">coord-1base-example.xml</Data></Cell>
+    <Cell ss:StyleID="s141"/>
+    <Cell ss:StyleID="s157"><Data ss:Type="String">n</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">TPMT sequence refer to a haplotype obs. -1</Data></Cell>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Example of a TPMT SNP data that support a haplotype observation</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">example-TPMT-one</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">sequence-example-TPMT-one.xml</Data></Cell>
+    <Cell ss:StyleID="s141"/>
+    <Cell ss:StyleID="s157"><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s158"><Data ss:Type="String">TPMT sequence refer to a haplotype obs. -2</Data></Cell>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Example of another TPMT SNP data that support a haplotype observation</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">example-TPMT-two</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">sequence-example-TPMT-two.xml</Data></Cell>
+    <Cell ss:StyleID="s141"/>
+    <Cell ss:StyleID="s157"><Data ss:Type="String">n</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s157"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s105"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s102"/>
     <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s157"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s105"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s158"/>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s159"/>
@@ -5838,13 +5921,12 @@
     <HorizontalResolution>-4</HorizontalResolution>
     <VerticalResolution>-4</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>4</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>3</LeftColumnRightPane>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -5852,14 +5934,14 @@
     </Pane>
     <Pane>
      <Number>1</Number>
-     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>10</ActiveRow>
+     <ActiveRow>30</ActiveRow>
      <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
@@ -6187,8 +6269,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>15</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6739,7 +6821,7 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Additional notes about the code.  Not published</Font>       </ss:Data></Comment></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
-    <Cell ss:StyleID="s157"><Data ss:Type="String">AA</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">AA</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s127"/>
     <Cell ss:StyleID="s171"/>
@@ -6824,148 +6906,148 @@
     <Cell ss:StyleID="s141"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s127"/>
     <Cell ss:StyleID="s171"/>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 1</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 1</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 1</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">2</Data></Cell>
     <Cell ss:StyleID="s124"/>
     <Cell ss:StyleID="s172"/>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 2</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 2</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 2</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">3</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">3</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 3</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 3</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 3</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">4</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 4</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 4</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 4</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">5</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">5</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 5</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 5</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 5</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">6</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">6</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 6</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 6</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 6</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 6</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">7</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">7</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 7</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 7</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 7</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">8</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">8</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 8</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 8</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 8</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">9</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">9</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 9</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 9</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 9</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">10</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">10</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 10</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 10</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 10</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 10</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">11</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">11</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 11</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 11</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 11</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">12</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">12</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 12</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 12</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 12</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 12</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">13</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">13</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 13</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 13</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 13</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 13</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">14</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">14</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 14</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 14</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 14</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 14</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">15</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">15</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 15</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 15</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 15</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 15</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">16</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">16</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 16</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 16</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 16</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 16</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">17</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">17</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 17</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 17</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 17</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 17</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">18</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">18</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 18</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 18</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 18</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 18</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">19</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">19</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 19</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 19</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 19</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 19</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">20</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">20</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 20</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 20</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 20</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 20</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s138"><Data ss:Type="Number">21</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="Number">21</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromsome 21</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">chromsome 21</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s138"><Data ss:Type="String">chromosome 21</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">chromosome 21</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
     <Cell ss:StyleID="s141"><Data ss:Type="Number">22</Data></Cell>
     <Cell ss:StyleID="s141"><Data ss:Type="Number">22</Data></Cell>
-    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromsome 22</Data></Cell>
-    <Cell ss:StyleID="s141"><Data ss:Type="String">chromsome 22</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s141"><Data ss:Type="String">chromosome 22</Data></Cell>
+    <Cell ss:StyleID="s141"><Data ss:Type="String">chromosome 22</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">X</Data></Cell>
     <Cell><Data ss:Type="Number">23</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">chromsome X</Data></Cell>
-    <Cell><Data ss:Type="String">chromsome X</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">chromosome X</Data></Cell>
+    <Cell><Data ss:Type="String">chromosome X</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Y</Data></Cell>
     <Cell><Data ss:Type="Number">24</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">chromsome Y</Data></Cell>
-    <Cell><Data ss:Type="String">chromsome Y</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">chromosome Y</Data></Cell>
+    <Cell><Data ss:Type="String">chromosome Y</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -6981,11 +7063,12 @@
     <HorizontalResolution>-4</HorizontalResolution>
     <VerticalResolution>-4</VerticalResolution>
    </Print>
+   <TopRowVisible>9</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>8</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -7104,7 +7187,7 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Additional notes about the code.  Not published</Font>       </ss:Data></Comment></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
-    <Cell ss:StyleID="s157"><Data ss:Type="String">INDEL</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">INDEL</Data></Cell>
     <Cell ss:StyleID="s173"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s127"/>
     <Cell ss:StyleID="s171"/>
@@ -7184,7 +7267,7 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Additional notes about the code.  Not published</Font>       </ss:Data></Comment></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="28.05">
-    <Cell ss:StyleID="s157"><Data ss:Type="String">directlink</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">directlink</Data></Cell>
     <Cell ss:StyleID="s173"><Data ss:Type="Number">1</Data></Cell>
     <Cell ss:StyleID="s127"/>
     <Cell ss:StyleID="s171"/>

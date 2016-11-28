@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Sequence>
-    <id value="sequence-2"/>
+    <id value="graphic-example-2"/>
     <type value="DNA"/>
-    <coordinateSystem value="1"/>
+    <coordinateSystem value="0"/>
     <referenceSeq>
-        
+        <referenceSeqString value="CGCCATTG"/>
         <strand value="1"/>
-        <referenceSeqString value="CCATTGCA"/>
-
-        <windowStart value="3"/>
-        <windowEnd value="7"/>
+        <windowStart value="0"/>
+        <windowEnd value="8"/>
     </referenceSeq>
     <pointer>
         <reference value="Sequence/graphic-example-3"/>

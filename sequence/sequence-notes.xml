@@ -16,10 +16,29 @@
 	For example, ACGTGCAT will be numbered from 1 to 8 in 1-based system and will be numbered from 0 to 8 in 0-based system to mark flanks (i.e. place between two Nucleotide). So the interval [3,5] in 1-based system is GTG while interval [2,5) in 0-based system is same segment GTG.
 </p>
 
-<h3>Strand of DNA </h3>
+<h3>Choice of Strand </h3>
 
 <p>
-There are lots of definition concerning with the Directionality of DNA or RNA. Here strand element in Sequence resource is defined to have constraints with value +1 and -1 , to indicate what is the direction for nucleotide series. In order to avoid confusion, we use +1 to express the "plus" strand (5' to 3') and -1 to express the "minus" strand (3' to 5')
+There are lots of definition concerning with the Directionality of DNA or RNA. Here strand element in Sequence resource is defined to have constraints with value +1 and -1 , to indicate what is the direction for nucleotide series. In order to avoid confusion, we use +1 to express the "plus" strand (5' to 3') and -1 to express the "minus" strand (3' to 5'). Here is a very simple mapping that indicates which number the expression will be represented.
+  <table border="1">
+    <tr>
+      <td><b>+1</b></td>
+      <td><b>-1</b></td> 
+    </tr>
+    <tr>
+      <td>Watson</td>
+      <td>Crick</td>
+    </tr>
+    <tr>
+      <td>Sense</td>
+      <td>Antisense</td>
+    </tr>
+    <tr>
+      <td>positive</td>
+      <td>negative</td>
+    </tr>
+  </table>
+
 </p>
 
 <p>
@@ -31,7 +50,7 @@ Here is a small-scale example: if 5' GCGATATCGCAAA 3' is the data, then GC..AAA 
 <p>
 We hope that string of <b>observedSeq</b> can be constrained more than just any normal string but with notation tables. Here we present what the nucleotide acid stirng should be constrianed within the range:
 
-　<table>
+  <table>
     <tr>
       <td>A --> adenosine </td>
       <td>M --> A C (amino)</td>

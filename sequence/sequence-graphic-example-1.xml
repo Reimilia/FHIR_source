@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Sequence>
-    <id value="sequence-1"/>
+    <id value="graphic-example-1"/>
     <type value="DNA"/>
-    <coordinateSystem value="1"/>
+    <coordinateSystem value="0"/>
     <referenceSeq>
         <referenceSeqId>
           <coding>
@@ -13,13 +13,14 @@
         </referenceSeqId>
         <strand value="1"/>
         <windowStart value="128273724"/>
-        <windowEnd value="128273728"/>
+        <windowEnd value="128273732"/>
     </referenceSeq>
     <variant>
         <start value="128273725"/>
         <end value="128273726"/>
         <observedAllele value="G"/>
         <referenceAllele value="T"/>
+        <cigar value="1M"/>
     </variant>
     <pointer>
         <reference value="Sequence/graphic-example-2"/>

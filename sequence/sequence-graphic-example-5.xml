@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Sequence>
-    <id value="sequence-5"/>
+    <id value="graphic-example-5"/>
     <type value="DNA"/>
-    <coordinateSystem value="1"/>
+    <coordinateSystem value="0"/>
     <referenceSeq>
         <referenceSeqId>
           <coding>
@@ -11,8 +11,9 @@
             <code value="NC_000002.12"/>
           </coding>
         </referenceSeqId>
+        <referenceSeqString value="CATG"/>
         <strand value="1"/>
-        <windowStart value="128273736"/>
-        <windowEnd value="128273740"/>
+        <windowStart value="128273732"/>
+        <windowEnd value="128273736"/>
     </referenceSeq>
 </Sequence>

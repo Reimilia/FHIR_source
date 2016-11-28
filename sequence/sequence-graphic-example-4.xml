@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Sequence>
-    <id value="sequence-4"/>
+    <id value="graphic-example-4"/>
     <type value="DNA"/>
-    <coordinateSystem value="1"/>
+    <coordinateSystem value="0"/>
     <referenceSeq>
-        <genomeBuild value="GRCh 38"/>
         <chromosome>
             <coding>
-                <system value="http://hl7.org/fhir/ValueSet/chromsome-human"/>
+                <system value="http://hl7.org/fhir/ValueSet/chromosome-human"/>
                 <code value="2"/>
-                <display value="chromsome 2"/>
+                <display value="chromosome 2"/>
             </coding>
         </chromosome>
+        <genomeBuild value="GRCh 38"/>    
         <strand value="1"/>
-        <windowStart value="128273732"/>
-        <windowEnd value="128273732"/>
+        <windowStart value="128273736"/>
+        <windowEnd value="128273740"/>
     </referenceSeq>
-    <variant>
-        <start value="55227922"/>
-        <end value="55227923"/>
-        <observedAllele value="T"/>
-        <referenceAllele value="C"/>
-    </variant>
 </Sequence>

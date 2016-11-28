@@ -33,16 +33,10 @@
 			<reference value="Sequence/example-sequence1"/>
 		</target>
 	</related>
-		<related>
+	<related>
 		<type value="derived-from"/>
 		<target>
 			<reference value="Sequence/example-sequence2"/>
-		</target>
-	</related>
-		<related>
-		<type value="derived-from"/>
-		<target>
-			<reference value="Sequence/example-sequence3"/>
 		</target>
 	</related>
 </Observation>
